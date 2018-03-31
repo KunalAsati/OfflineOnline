@@ -1,10 +1,104 @@
-<?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:theme="@style/AppTheme"
-    tools:layout_editor_absoluteY="81dp">
+    android:layout_height="match_parent">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+        <TextView
+            android:id="@+id/faq1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Q.What is the existing Policy of food grains Procurement?
+
+Ans:The Central Government extends price support to paddy, coarse grains and wheat through the Food Corporation of India and the State Agencies. All the food grains conforming to the prescribed specifications i.e. Fair Average Quality norms offered for sale at specified centers are bought by the public procurement agencies. The producers have the option to sell their produce to FCI/State Agencies at support prices or in the open market as is advantageous to them. The procurement policy is open ended and no targets, as such, are fixed for the procurement of food grains."
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textStyle="italic"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/faq2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textStyle="italic"
+            android:textColor="#000000"
+            android:text="Q.How is the Procurement of rice undertaken under levy system?
+
+Ans:Rice is collected by way of statutory levy on rice millers and rice dealers. The percentage of levy rice is fixed by State Governments with the approval of Central Government taking into account requirements for the Central Pool, domestic consumption and marketable surplus. The levy percentage varies from State to State. Prices of levy rice are fixed before commencement of every Kharif Marketing Season.\n"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/faq1"
+            tools:ignore="InvalidId,MissingConstraints" />
+
+        <TextView
+            android:id="@+id/faq3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:textStyle="italic"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"
+            android:text="Q.What is the Scheme of Decentralized Procurement(DCP) of food grains?
+
+Ans:The scheme of Decentralized Procurement of food grains was introduced by the Government in 1997-98 with a view to enhancing the efficiency of procurement and PDS and encouraging local procurement to the maximum extent thereby extending the benefits of MSP to local farmers as well as to save on transit costs. This also enables procurement of food grains more suited to the local taste."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/faq2"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="584dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="italic"
+            android:textColor="#000000"
+            android:text="Q.4Whether Government of India is undertaking any program for strengthening and upgrading the skills of personnel engaged in the functioning and implementation of TPDS.\n
+Ans:Department of Food and Public Distribution, Government of India is implementing a scheme component called TPDS- Training. This aims at strengthening and upgrading the skills of personnel engaged in the functioning and implementation of TPDS by conducting training programs and organizing lectures, seminars and workshops on policy issues with regard to TPDS and related fields for functionaries of various levels in the State Food and Civil Supplies Department and State Agencies like State Civil Supplies Corporations, etc. To make TPDS more effective and efficient, training is also provided to FPS owners, members of PRIs and Urban Local Bodies and members of Vigilance Committees at various levels, engaged in TPDS. In order to successfully implement National Food Security Act (NFSA), 2013, training programs are also being organized under the scheme to sensitize and train key official of the State/UT Governments, FCI, Master Trainers nominated by States/UTs, etc through FCI or other agency."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/faq3"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:textStyle="italic"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"
+            android:text="Q.5Is there any scheme/project of Government of India on computerisation of TPDS?\n
+Ans:Government has initiated implementation of Component-I of the scheme for ‘End-to-end Computerisation of TPDS Operations’, which comprises digitization of ration cards/beneficiary and other databases, computerization of supply-chain management and setting up of transparency portal and grievance redressal mechanisms."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+    </android.support.constraint.ConstraintLayout>
+    </ScrollView>
 
 </android.support.constraint.ConstraintLayout>

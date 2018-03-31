@@ -67,6 +67,8 @@ private static final String TAG="message";
             displaySelectedItem(R.id.home_fragment);
 
         }*/
+        displaySelectedItem(R.id.home_fragment);
+
     }
 
     @Override
@@ -123,7 +125,7 @@ private static final String TAG="message";
         } else if (id == R.id.minimum_prize) {
             f = new MinimumSupportPrice();
 
-        } else if (id == R.id.e_mandi) {
+        } else if (id == R.id.fairprice) {
             startActivity(new Intent(AfterLoginHome.this , MarketPriceDetails.class));
 
         }
@@ -146,11 +148,24 @@ private static final String TAG="message";
                 //e.toString();
             }
         } else if (id == R.id.about_fragment) {
+            f = new AboutUs();
+
+        }
+        else if (id == R.id.faq) {
+            f = new FaQs();
+
+        }
+        else if (id == R.id.scheme) {
+            f = new Schemes();
 
         }
         else if(id==R.id.notifications)
         {
             f=new NotificationsFragment();
+        }
+        else if(id==R.id.rationcard)
+        {
+            f=new RationCardManagement();
         }
 
 

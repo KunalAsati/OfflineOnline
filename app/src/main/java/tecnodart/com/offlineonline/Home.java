@@ -28,7 +28,7 @@ public class Home extends Fragment {
     private static int currentPage = 0;
     private static ViewPager mPager;
     Fragment f = null;
-    private ImageView share, msp, fairprice, weather, schemes , faqs;
+    private ImageView share, msp, fairprice, weather, schemes , faqs, rationcard;
     View v;
     @Nullable
     @Override
@@ -43,8 +43,8 @@ public class Home extends Fragment {
         schemes = v.findViewById(R.id.schemeforme);
         msp = v.findViewById(R.id.msp);
         weather = v.findViewById(R.id.weatherforecast);
-        fairprice = v.findViewById(R.id.fairprice);
-
+        fairprice = v.findViewById(R.id.fairpricetiles);
+        rationcard = v.findViewById(R.id.rationcardmanagement);
         return v;
     }
 
@@ -58,6 +58,17 @@ public class Home extends Fragment {
             @Override
             public void onClick(View v) {
                 f= new FaQs();
+                FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
+                ft.replace(R.id.content_after_login_home, f);
+                ft.commit();
+            }
+        });
+
+
+        rationcard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                f= new RationCardManagement();
                 FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
                 ft.replace(R.id.content_after_login_home, f);
                 ft.commit();
